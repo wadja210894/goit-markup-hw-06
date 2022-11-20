@@ -342,7 +342,8 @@ body {
   align-items: center;
   border-radius: 50%;
   fill: var(--third-bacground-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -399,6 +400,7 @@ body {
 }
 .footer {
   display: flex;
+  justify-content: space-between;
 }
 .footer-information {
   margin-right: 70px;
@@ -416,7 +418,7 @@ body {
 .adres-list > li:last-child {
   margin-bottom: 0px;
 }
-.addres {
+.addres {  
   line-height: calc(24 / 14);
   color: var(--white-text);
   font-style: normal;
@@ -430,7 +432,8 @@ body {
 .contact-link-footer {
   font-style: normal;
   text-decoration: none;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -454,6 +457,7 @@ body {
 .our-social-links {
   display: flex;
   justify-content: center;
+  margin-right: 93px;
 }
 .social-link-footer {
   display: flex;
@@ -473,6 +477,66 @@ body {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--accent-color);
+}
+.sing-up {
+  margin-top: 8px;
+}
+.sing-up-title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+.input-email {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.input-email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sing-up-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sing-up-button:hover,
+.sing-up-button:focus {
+  background-color: #188ce8;
+}
+.sing-up-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  fill: var(--white-text);
 }
 .products {
   padding: 94px 0px;
