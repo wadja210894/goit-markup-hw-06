@@ -807,6 +807,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-wrapper {
   margin-right: 7px;
@@ -815,6 +816,7 @@ body {
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input-checkbox:checked + .form-field-checkbox .icon-wrapper {
   background-color: var(--accent-color);
