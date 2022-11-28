@@ -467,12 +467,8 @@
         <div class="modal-content">
           <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="modal-form">
-            <label for="name" class="form-field">
-              <span class="form-label">Ім'я</span>
-              <span
-                ><svg class="modal-icon" width="12" height="12">
-                  <use href="./images/icons.svg#icon-name"></use></svg
-              ></span>
+            <label for="name" class="form-field">Ім'я</label>
+            <div class="wrapper-input">
               <input
                 type="text"
                 name="name"
@@ -480,14 +476,12 @@
                 class="form-input"
                 required
               />
-            </label>
-
-            <label for="tel" class="form-field">
-              <span class="form-label">Телефон</span>
-              <span
-                ><svg class="modal-icon" width="13" height="13">
-                  <use href="./images/icons.svg#icon-tel"></use></svg
-              ></span>
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+            <label for="tel" class="form-field">Телефон</label>
+            <div class="wrapper-input">
               <input
                 type="tel"
                 name="tel"
@@ -495,14 +489,12 @@
                 class="form-input"
                 required
               />
-            </label>
-
-            <label for="email-modal" class="form-field">
-              <span class="form-label">Пошта</span>
-              <span
-                ><svg class="modal-icon" width="15" height="12">
-                  <use href="./images/icons.svg#icon-mail"></use></svg
-              ></span>
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+            <label for="email-modal" class="form-field">Пошта</label>
+            <div class="wrapper-input">
               <input
                 type="email"
                 name="email"
@@ -510,17 +502,17 @@
                 class="form-input"
                 required
               />
-            </label>
-
-            <label for="comment" class="form-field">
-              <span class="form-label">Коментар</span>
-              <textarea
-                name="comment"
-                id="comment"
-                placeholder="Введіть текст"
-                class="form-input-comment"
-              ></textarea>
-            </label>
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+            <label for="comment" class="form-field">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+              class="form-input-comment"
+            ></textarea>
             <div class="checkbox">
               <input
                 type="checkbox"
